@@ -1,1 +1,6 @@
 .idea/
+/saved_results/
+deep_loss.ipynb
+deep_more_layer.ipynb
+deep_window.ipynb
+deep.ipynb
