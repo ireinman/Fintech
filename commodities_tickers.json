@@ -1,0 +1,36 @@
+{
+    "Grains": {
+        "Wheat": "ZW=F",
+        "Oats": "ZO=F",
+        "Corn": "ZC=F",
+        "Soybeans": "ZS=F",
+        "Rough Rice": "ZR=F"
+    },
+    "Soft Commodities": {
+        "Coffee": "KC=F",
+        "Sugar": "SB=F",
+        "Cotton": "CT=F",
+        "Cocoa": "CC=F",
+        "Orange Juice": "OJ=F",
+        "Lumber": "LBS=F"
+    },
+    "Energy Commodities": {
+        "Crude Oil (WTI)": "CL=F",
+        "Crude Oil (Brent)": "BZ=F",
+        "Natural Gas": "NG=F",
+        "Heating Oil": "HO=F",
+        "Gasoline (RBOB)": "RB=F"
+    },
+    "Metals": {
+        "Gold": "GC=F",
+        "Silver": "SI=F",
+        "Copper": "HG=F",
+        "Platinum": "PL=F",
+        "Palladium": "PA=F"
+    },
+    "Livestock": {
+        "Live Cattle": "LE=F",
+        "Feeder Cattle": "GF=F",
+        "Lean Hogs": "HE=F"
+    }
+}
