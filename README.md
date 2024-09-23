@@ -19,7 +19,7 @@ This notebook is responsible for extracting the important information (get next 
 2. For each commodity and each year, saves the dataframe for the relevant year.
 3. Saves a single dataframe which is the join of all the dataframes created in (1).
 
-### data_processed
+### processed_data
 This is the folder of the data after preprocessing that was generated via the data engineering pipeline.
 
 ### commodities_tickers.json
