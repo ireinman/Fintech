@@ -11,10 +11,10 @@ The data folder contains the raw data as downloaded from online, of the futures 
 This notebook reads over the raw data and looks for any problematic rows (with missing values). We used this file to find any bad rows and manually deleted them from the raw data.
 
 ### adjust_prime.ipynb
-We will want to add the prime as a feature to the final dataset. This file performs the necessary data engineering to cause the integration to go more smoothly.
+We will want to add the prime as a feature to the final dataset. This file performs the necessary data engineering to cause the integration in the data process file (preprocess_comm.ipynb) to go more smoothly.
 
 ### preprocess_comm.ipynb
-This notebook is responsible for extracting the important information (get next year for every row in data) from the raw excel files. For every row in the raw files, we save the future prices for next year in the months March, May, July and September. We save the results of every day in a new dataframe, one with different columns (date/march/may/july/september). This was for all the data to be in the same format and make it more comfortable for performing tasks. Then, it adds the prime and date difference as additional columns, for reasons explained in the written report. The file continues to save a number of csv files:
+This notebook is responsible for extracting the important information (get next year for every row in data) from the raw excel files and the results of the adjust_prime notebbok. For every row in the raw files, we save the future prices for next year in the months March, May, July and September. We save the results of every day in a new dataframe, one with different columns (date/march/may/july/september). This was for all the data to be in the same format and make it more comfortable for performing tasks. Then, it adds the prime and date difference as additional columns, for reasons explained in the written report. The file continues to save a number of csv files:
 1. For each commodity, saves the entire dataframe,
 2. For each commodity and each year, saves the dataframe for the relevant year.
 3. Saves a single dataframe which is the join of all the dataframes created in (1).
