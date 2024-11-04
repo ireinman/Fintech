@@ -7,6 +7,9 @@ This repository contains all the code and data we used to conduct our experiment
 ### data
 The data folder contains the raw data as downloaded from online, of the futures and of the prime interest rate. The data engineering pipeline to get datasets that we can work with is summarized in the files check_good_years.ipynb, preprocess_comm.ipynb, and adjust_prime.ipynb.
 
+### processed_data
+This is the folder of the data after preprocessing that was generated via the data engineering pipeline.
+
 ### check_good_years.ipynb
 This notebook reads over the raw data and looks for any problematic rows (with missing values). We used this file to find any bad rows and manually deleted them from the raw data.
 
@@ -19,26 +22,34 @@ This notebook is responsible for extracting the important information (get next 
 2. For each commodity and each year, saves the dataframe for the relevant year.
 3. Saves a single dataframe which is the join of all the dataframes created in (1).
 
-### processed_data
-This is the folder of the data after preprocessing that was generated via the data engineering pipeline.
-
 ### commodities_tickers.json
 JSON file that contains codes of popularly traded commodities in the futures market. The commodities are divided by category (grains / metals / etc.).
 
+### predict_average.ipynb
+This notebook presents a baseline model for predicting the prices of futures contracts using the mean of the previous values, as mentioned in the report.
+
 ### regression.ipynb
-Does first task in the written report.
+This notebook presents an experiment using linear regression models for the task of predicting futures contract prices, as mentioned in the report.
+
+### ar.ipynb
+This notebook presents a model for predicting the prices of futures contracts using auto-regressive models, as mentioned in the report.
+
+### ma.ipynb
+This notebook presents a model for predicting the prices of futures contracts using moving-average models, as mentioned in the report.
 
 ### sarima.ipynb
-Does second task in the written report
+This notebook presents a model for predicting the prices of futures contracts using SARIMA models which have auto-regressive and moving-average components alongside a seasonality component, as mentioned in the report.
+
+### sarimax.ipynb
+This notebook presents a model for predicting the prices of futures contracts using SARIMA models incorporated with an exogenous variable of the "prime", called SARIMAX , as mentioned in the report.
 
 ### kalman-filters-holt-winters.ipynb
-Does second task in the written report using a different model - Holt Winters using Kalman filters.
+This notebook presents a model for predicting the prices of futures contracts using the Holt-Winters model with additive seasonality, implemented via the Kalman Filters Equations, as mentioned in the report.
 
 ### deep_sequential.ipynb
-Does third task in the written report.
+This notebook presents a model for predicting the prices of futures contracts using deep learning and sequential models like RNN and LSTM , as mentioned in the report.
 
 ### sharpe_index.ipynb
-Does fourth task in the written report.
 
 ## Requirements
 To run the code in this repository, the following prerequisites are required:
