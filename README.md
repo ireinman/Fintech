@@ -47,6 +47,10 @@ This notebook presents a model for predicting the prices of futures contracts us
 This notebook presents a model for predicting the prices of futures contracts using deep learning and sequential models like RNN and LSTM , as mentioned in the report.
 
 ### sharpe_index.ipynb
+This notebook presents a model for predicting the quarterly of the Sharpe Ratio of the following quarter, as mentioned in the report. We did not end up using this code as predicting the Sharpe Ratio is not a common task.
+
+### economic_statistics.ipynb
+This notebook provides various statistics for all futures being measured. This will be used to measure the general success of each future in the bonus section.
 
 ### commodities_tickers.json
 JSON file that contains codes of popularly traded commodities in the futures market. The commodities are divided by category (grains / metals / etc.).
