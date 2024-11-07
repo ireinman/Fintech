@@ -55,7 +55,7 @@ This notebook provides various statistics for all futures being measured. This w
 ### commodities_tickers.json
 JSON file that contains codes of popularly traded commodities in the futures market. The commodities are divided by category (grains / metals / etc.).
 
-### ar_predictions.ipynb
+### ar-predictions.ipynb
 This notebook presents a trial of forecasting the time series with AR(p) models, which appear to be the best models in our task. The notebook contains also discussion about the validity of the results, and when it would be a good idea to use such models
 
 ## Requirements
