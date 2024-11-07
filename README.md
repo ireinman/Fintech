@@ -44,7 +44,7 @@ This notebook presents a model for predicting the prices of futures contracts us
 This notebook presents a model for predicting the prices of futures contracts using the Holt-Winters model with additive seasonality, implemented via the Kalman Filters Equations, as mentioned in the report.
 
 ### deep_sequential.ipynb
-This notebook presents a model for predicting the prices of futures contracts using deep learning and sequential models like RNN and LSTM , as mentioned in the report.
+This notebook presents a model for predicting the prices of futures contracts using deep learning and sequential models like RNN and LSTM, as mentioned in the report.
 
 ### sharpe_index.ipynb
 This notebook presents a model for predicting the quarterly of the Sharpe Ratio of the following quarter, as mentioned in the report. We did not end up using this code as predicting the Sharpe Ratio is not a common task.
@@ -54,6 +54,9 @@ This notebook provides various statistics for all futures being measured. This w
 
 ### commodities_tickers.json
 JSON file that contains codes of popularly traded commodities in the futures market. The commodities are divided by category (grains / metals / etc.).
+
+### ar_predictions.ipynb
+This notebook presents a trial of forecasting the time series with AR(p) models, which appear to be the best models in our task. The notebook contains also discussion about the validity of the results, and when it would be a good idea to use such models
 
 ## Requirements
 To run the code in this repository, the following prerequisites are required:
